@@ -32,6 +32,7 @@ Add the following initializer (e.g. `app/main/initializers/server/braintree.rb`)
   Braintree::Configuration.public_key = 'your_public_key'
   Braintree::Configuration.private_key = 'your_private_key'
 ```
+You can sign up for your credentials on the [Braintree website](https://www.braintreepayments.com/get-started).
 
 ### Integration
 
@@ -42,6 +43,10 @@ To add the Braintree form to your site simply add the component to your page:
     <:braintree>
   </form>
 ```
+
+Which will result in this form:
+
+![V.zero Example](docs/vzero.png)
 
 You can specify additional options to generate the [ClientToken](https://developers.braintreepayments.com/javascript+ruby/reference/request/client-token/generate) by passing in arguments prefixed with the `server__` name. For example to pass the `client_id` option when generating the **ClientToken** you specify the following:
 
@@ -70,6 +75,10 @@ To process the payment you should add an `e-submit` listener to the surrounding 
   end
 ...
 ```
+
+## Example
+
+[This sample implementation](https://github.com/cbetta/volt-braintree-demo) of this component showcases how to process a payment after receiving the token.
 
 ## Contributing
 
