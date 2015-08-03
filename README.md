@@ -80,6 +80,10 @@ To process the payment you should add an `e-submit` listener to the surrounding 
 
 [This sample implementation](https://github.com/cbetta/volt-braintree-demo) of this component showcases how to process a payment after receiving the token.
 
+## Todos
+
+* Add a Volt Task that wraps around most of the Braintree API so you dont need to write your own runners.
+
 ## Contributing
 
 1. Fork it ( http://github.com/cbetta/volt-braintree/fork )
