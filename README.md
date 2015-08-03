@@ -46,7 +46,7 @@ To add the Braintree form to your site simply add the component to your page:
 
 Which will result in this form:
 
-![V.zero Example](docs/vzero.png)
+![V.zero Example](docs/vzero-small.png)
 
 You can specify additional options to generate the [ClientToken](https://developers.braintreepayments.com/javascript+ruby/reference/request/client-token/generate) by passing in arguments prefixed with the `server__` name. For example to pass the `client_id` option when generating the **ClientToken** you specify the following:
 
